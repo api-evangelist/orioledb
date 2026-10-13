@@ -1,0 +1,12 @@
+generated: '2026-10-13'
+method: searched
+source: https://hub.docker.com/v2/repositories/orioledb/orioledb (HTTP 200) and https://api.github.com/repos/orioledb/orioledb/releases (HTTP 200)
+packages:
+- name: orioledb/orioledb
+  registry: docker-hub
+  url: https://hub.docker.com/r/orioledb/orioledb
+  language: c
+  official: true
+  version: beta19
+  published: '2026-10-13'
+  note: PostgreSQL + OrioleDB extension container image; 72446 pulls, last updated 2026-10-13.

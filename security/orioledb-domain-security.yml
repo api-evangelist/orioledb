@@ -1,0 +1,15 @@
+generated: '2026-10-13'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.orioledb.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov 22 04:14:20 2026 GMT
+  hsts: false
+domains:
+- domain: orioledb.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

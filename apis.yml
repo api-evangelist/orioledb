@@ -1,23 +1,65 @@
 aid: orioledb
 name: OrioleDB
-description: 'OrioleDB is a company surfaced via the API Evangelist harvest backlog (source: market-gap:databases-postgres)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'OrioleDB is an open-source PostgreSQL extension and storage engine (Apache/PostgreSQL-licensed, github.com/orioledb) that combines the advantages of on-disk and in-memory engines: a copy-on-write, undo-log based table access method with row-level WAL, lock-less page reads and decoupled S3 storage. It is consumed as SQL inside PostgreSQL and shipped as source releases and a Docker image; it publishes no HTTP API.'
 url: https://raw.githubusercontent.com/api-evangelist/orioledb/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:market-gap:databases-postgres
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
 - Company
-apis: []
+- Databases
+- PostgreSQL
+- Storage Engines
+- Open Source
+- Extensions
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://orioledb.com/img/logo-vertical.png
 common:
+- type: ChangeLog
+  url: changelog/orioledb-changelog.yml
+- type: Hosts
+  url: hosts/orioledb-hosts.yml
+- type: Vendors
+  url: vendors/orioledb-vendors.yml
+- type: SDKs
+  url: packages/orioledb-packages.yml
+- type: Packages
+  url: packages/orioledb-packages.yml
+- type: ChangeLog
+  url: https://orioledb.com/blog/tags/release-notes
+- type: DomainSecurity
+  url: security/orioledb-domain-security.yml
 - type: Website
   url: https://www.orioledb.com
+- type: Documentation
+  url: https://www.orioledb.com/docs
+- type: GettingStarted
+  url: https://www.orioledb.com/docs/usage/getting-started
+- type: Blog
+  url: https://www.orioledb.com/blog
+- type: GitHubOrganization
+  url: https://github.com/orioledb
+apis: []
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.orioledb.com
+    status: 200
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v5
