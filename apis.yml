@@ -5,7 +5,7 @@ url: https://raw.githubusercontent.com/api-evangelist/orioledb/refs/heads/main/a
 x-type: company
 x-source: harvest:market-gap:databases-postgres
 x-tier: profiled
-x-tier-reason: enrichment pass 2026-10-13 (local-v5; was harvest)
+x-tier-reason: 'enrichment pass 2026-10-13 (local-v5; was harvest); minimal 2026-10-14: no developer program: PostgreSQL storage engine with no published HTTP API contract, 0 operations'
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
@@ -60,6 +60,6 @@ x-coverage:
     status: 200
 x-enrichment:
   date: '2026-10-13'
-  status: enriched
+  status: minimal
   artifacts_added: 2
   pass: local-v5
